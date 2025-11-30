@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:shopping_app_with_getx/common/style/Paddding.dart';
+import 'package:shopping_app_with_getx/common/style/padding.dart';
 import 'package:shopping_app_with_getx/common/widgets/login_and_signup/app_form_divider.dart';
 import 'package:shopping_app_with_getx/features/authentication/screens/signup/widgets/sign_up_form.dart';
 import 'package:shopping_app_with_getx/utils/constants/sizes.dart';

@@ -80,7 +80,7 @@ class SignUPForm extends StatelessWidget {
 
         // Create Account Button
 
-        AppElevatedButton(onPressed: ()=> Get.to(LoginScreen()), child: Text(AppTexts.createAccount))
+        AppElevatedButton(onPressed: ()=> Get.offAll(LoginScreen()), child: Text(AppTexts.createAccount)),
       ],
     );
   }

@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:shopping_app_with_getx/navigation_menu.dart';
 import 'package:shopping_app_with_getx/utils/constants/colors.dart';
 
 import '../../../../../common/widgets/buttons/app_elevated_button.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/texts.dart';
-import '../../signup/sign_up_Screen.dart';
+import '../../forget_password/forget_password_screen.dart';
+import '../../signup/sign_up_screen.dart';
 
 class AppLoginForm extends StatelessWidget {
-  const AppLoginForm({
-    super.key,
-  });
+  const AppLoginForm({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +53,7 @@ class AppLoginForm extends StatelessWidget {
             ),
             // forget password
             TextButton(
-              onPressed: () {},
+              onPressed: () => Get.to(ForgetPasswordScreen()),
               child: Text(AppTexts.forgetPassword),
             ),
           ],
@@ -61,7 +61,7 @@ class AppLoginForm extends StatelessWidget {
 
         // login button
         AppElevatedButton(
-          onPressed: () {},
+          onPressed: () => Get.offAll(() => NavigationMenu()),
           child: Text(AppTexts.signIn),
         ),
 
@@ -72,7 +72,7 @@ class AppLoginForm extends StatelessWidget {
           width: double.infinity,
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(foregroundColor: AppColors.primary),
-            onPressed: ()=> Get.to(SignUpScreen()),
+            onPressed: () => Get.to(SignUpScreen()),
             child: Text(AppTexts.createAccount),
           ),
         ),
@@ -80,4 +80,3 @@ class AppLoginForm extends StatelessWidget {
     );
   }
 }
-

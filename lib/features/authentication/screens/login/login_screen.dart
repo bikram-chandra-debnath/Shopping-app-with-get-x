@@ -5,7 +5,7 @@ import 'package:shopping_app_with_getx/features/authentication/screens/login/wid
 import 'package:shopping_app_with_getx/common/widgets/buttons/app_social_button.dart';
 import 'package:shopping_app_with_getx/utils/helpers/helper_function.dart';
 
-import '../../../../common/style/Paddding.dart';
+import '../../../../common/style/padding.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/constants/texts.dart';
 

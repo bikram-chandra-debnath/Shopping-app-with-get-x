@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app_with_getx/common/widgets/textfields/search_bar.dart';
 import 'package:shopping_app_with_getx/features/shop/screen/home/widget/home_appbar.dart';
+import 'package:shopping_app_with_getx/features/shop/screen/home/widget/home_categories.dart';
 import 'package:shopping_app_with_getx/features/shop/screen/home/widget/primary_header_container.dart';
 import 'package:shopping_app_with_getx/utils/constants/sizes.dart';
 
@@ -17,15 +18,23 @@ class HomeScreen extends StatelessWidget {
           // primary header container
           AppPrimaryHeaderContainer(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // appbar
                 AppHomeAppBar(),
+
+                SizedBox(height: AppSizes.spaceBtwSections),
+
+                // new category
+                AppHomeCategories(),
               ],
             ),
           ),
 
           // search bar
           AppSearchBar(),
+
+          //
         ],
       ),
     );

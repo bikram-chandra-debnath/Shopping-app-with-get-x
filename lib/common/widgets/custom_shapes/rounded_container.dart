@@ -2,8 +2,8 @@ import "package:flutter/material.dart";
 import "package:shopping_app_with_getx/utils/constants/colors.dart";
 import "package:shopping_app_with_getx/utils/constants/sizes.dart";
 
-class AppCircularContainer extends StatelessWidget {
-  const AppCircularContainer({
+class AppRoundedContainer extends StatelessWidget {
+  const AppRoundedContainer({
     super.key,
     this.height,
     this.width,

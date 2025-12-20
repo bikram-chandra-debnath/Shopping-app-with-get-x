@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shopping_app_with_getx/features/shop/screen/home/home_screen.dart';
+import 'package:shopping_app_with_getx/features/shop/screen/store/store_screen.dart';
 import 'package:shopping_app_with_getx/utils/constants/colors.dart';
 import 'package:shopping_app_with_getx/utils/helpers/helper_function.dart';
 
@@ -41,7 +42,7 @@ class NavigationControlledr extends GetxController {
 
   List<Widget> pages = [
     HomeScreen(),
-    Container(color: Colors.blue),
+   StoreScreen(),
     Container(color: Colors.green),
     Container(color: Colors.yellow),
   ];

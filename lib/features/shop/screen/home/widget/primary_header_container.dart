@@ -3,21 +3,21 @@ import 'package:flutter/material.dart';
 import 'package:shopping_app_with_getx/common/widgets/custom_shapes/circuler_container.dart';
 import 'package:shopping_app_with_getx/common/widgets/custom_shapes/rounded_edge_container.dart';
 import 'package:shopping_app_with_getx/utils/constants/colors.dart';
-import 'package:shopping_app_with_getx/utils/constants/sizes.dart';
 import 'package:shopping_app_with_getx/utils/helpers/device_helpers.dart';
 
 class AppPrimaryHeaderContainer extends StatelessWidget {
   const AppPrimaryHeaderContainer({
-    super.key,required this.child,
+    super.key,required this.child, required this.height,
   });
 
   final Widget child;
+  final double height;
 
   @override
   Widget build(BuildContext context) {
     return AppRoundedEdgeContainer(
       child: Container(
-        height: AppSizes.homePrimaryHeaderHeight,
+        height: height,
         width: double.infinity,
         color: AppColors.primary,
         child: Stack(

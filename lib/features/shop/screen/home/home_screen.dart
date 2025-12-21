@@ -31,6 +31,7 @@ class HomeScreen extends StatelessWidget {
 
                 // primary header container
                 AppPrimaryHeaderContainer(
+                  height: AppSizes.homePrimaryHeaderHeight,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [

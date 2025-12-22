@@ -20,7 +20,7 @@ class StoreScreen extends StatelessWidget {
             return [
               SliverAppBar(
                 automaticallyImplyLeading: false,
-                expandedHeight: 330,
+                expandedHeight: 340,
                 pinned: true,
                 floating: false,
                 flexibleSpace: SingleChildScrollView(

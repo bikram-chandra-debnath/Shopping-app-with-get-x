@@ -32,6 +32,7 @@ class AppProductCardVerticla extends StatelessWidget {
         ),
 
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start, 
           children: [
             // thumbnail, favourite button and discount tag
             AppRoundedContainer(
@@ -67,8 +68,8 @@ class AppProductCardVerticla extends StatelessWidget {
                     right: 0,
                     top: 0,
                     child: AppCirculrIcon(
-                      icon: Iconsax.heart5,
-                      color: Colors.red,
+                      icon: Iconsax.heart,
+                      // color: Colors.red,
                     ),
                   ),
                 ],

@@ -4,11 +4,13 @@ import 'package:shopping_app_with_getx/common/style/shadow.dart';
 import 'package:shopping_app_with_getx/common/widgets/custom_shapes/rounded_container.dart';
 import 'package:shopping_app_with_getx/common/widgets/icons/circular_icons.dart';
 import 'package:shopping_app_with_getx/common/widgets/images/rounded_image.dart';
+import 'package:shopping_app_with_getx/common/widgets/text/brand_title_with_verify_icon.dart';
 import 'package:shopping_app_with_getx/common/widgets/text/product_price.dart';
 import 'package:shopping_app_with_getx/common/widgets/text/product_title_text.dart';
 import 'package:shopping_app_with_getx/utils/constants/colors.dart';
 import 'package:shopping_app_with_getx/utils/constants/images.dart';
 import 'package:shopping_app_with_getx/utils/constants/sizes.dart';
+import 'package:shopping_app_with_getx/utils/constants/texts.dart';
 import 'package:shopping_app_with_getx/utils/helpers/helper_function.dart';
 
 class AppProductCardVerticla extends StatelessWidget {
@@ -89,22 +91,7 @@ class AppProductCardVerticla extends StatelessWidget {
                   SizedBox(height: AppSizes.spaceBtwItems / 2),
 
                   // product brand name
-                  Row(
-                    children: [
-                      Text(
-                        "Bata",
-                        style: Theme.of(context).textTheme.labelMedium,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      SizedBox(width: AppSizes.xs),
-                      Icon(
-                        Iconsax.verify5,
-                        color: AppColors.primary,
-                        size: AppSizes.iconxs,
-                      ),
-                    ],
-                  ),
+                  AppBrandTitleWithVerifyIcon(title: AppTexts.bata,),
 
                 ],
               ),

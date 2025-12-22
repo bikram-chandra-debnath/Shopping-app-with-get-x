@@ -91,11 +91,18 @@ static const String verifyEmailSubtitle = "We've sent a verification link to you
 static const String homeAppbarTitle = "Good Morning";
 static const String homeAppbarSubtitle = "Bikram";
 static const String popularCategories = "Popular Categories";
-
+static const String bata = "Bata";
 
 
 static const String searchBarTitle = "Search in Store";
 static const String popularProducts = "Popular Products";
+
+
+
+///-----------[Store Screen]-------------
+///
+static const String store = "Store";
+static const String brands = "Brands";
 
 
 ///-------[Commonly Used]-----

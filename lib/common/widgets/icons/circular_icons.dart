@@ -36,7 +36,7 @@ class AppCirculrIcon extends StatelessWidget {
         borderRadius: BorderRadius.circular(1000),
       ),
       child: IconButton(
-        onPressed: () {},
+        onPressed: onPressed,
         icon: Icon(icon, color: color, size: size),
       ),
     );

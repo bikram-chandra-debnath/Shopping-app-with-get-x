@@ -53,7 +53,7 @@ class StoreScreen extends StatelessWidget {
                                 shrinkWrap: true,
 
                                 itemBuilder: (context, index) {
-                                  return AppBrandCard();
+                                  return SizedBox(width: AppSizes.brandCardWidth , child: AppBrandCard());
                                 },
                               ),
                             ),

@@ -18,7 +18,7 @@ class AppBrandCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppRoundedContainer(
       height:AppSizes.brandCardHeight,
-      width: AppSizes.brandCardWidth,
+     
       showBorder:showBorder,
       padding: EdgeInsets.all(AppSizes.sm),
       backgroundColor: Colors.transparent,

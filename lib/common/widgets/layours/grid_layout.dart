@@ -5,12 +5,12 @@ class AppGridLayout extends StatelessWidget {
   const AppGridLayout({
     super.key,
     required this.itemCount,
-    this.mainAxisCount=288,
+    this.mainAxisExtent=288,
     required this.itemBuilder,
   });
 
   final int itemCount;
-  final double? mainAxisCount;
+  final double? mainAxisExtent;
   final Widget Function(BuildContext context, int index) itemBuilder;
 
   @override
@@ -23,7 +23,7 @@ class AppGridLayout extends StatelessWidget {
         padding: EdgeInsets.zero,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2, // 2 items per row
-          mainAxisExtent: mainAxisCount,
+          mainAxisExtent: mainAxisExtent,
           crossAxisSpacing: AppSizes.gridViewSpacing,
           mainAxisSpacing: AppSizes.gridViewSpacing,
         ),

@@ -22,7 +22,7 @@ class AppProductCardVerticla extends StatelessWidget {
     return GestureDetector(
       onTap: () {},
       child: Container(
-        width: 180,
+        height: 180,
         padding: EdgeInsets.all(1),
         decoration: BoxDecoration(
           boxShadow: AppShadow.verticlaProductShadow,
@@ -42,7 +42,7 @@ class AppProductCardVerticla extends StatelessWidget {
               child: Stack(
                 children: [
                   // thumbnail
-                  AppRoundedimage(imageUrl: AppImages.productImage15),
+                  Center(child: AppRoundedimage(imageUrl: AppImages.productImage15)),
 
                   // discount tag
                   Positioned(

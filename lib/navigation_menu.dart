@@ -42,7 +42,7 @@ class NavigationMenu extends StatelessWidget {
 }
 
 class NavigationController extends GetxController {
-  NavigationController get instance => Get.find();
+ static NavigationController get instance => Get.find();
   RxInt selectedIndex = 0.obs;
 
   List<Widget> pages = [

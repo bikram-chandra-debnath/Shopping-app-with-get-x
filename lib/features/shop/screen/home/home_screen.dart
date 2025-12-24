@@ -7,7 +7,7 @@ import 'package:shopping_app_with_getx/common/widgets/textfields/search_bar.dart
 import 'package:shopping_app_with_getx/features/shop/controller/home/home_controller.dart';
 import 'package:shopping_app_with_getx/features/shop/screen/home/widget/home_appbar.dart';
 import 'package:shopping_app_with_getx/features/shop/screen/home/widget/home_categories.dart';
-import 'package:shopping_app_with_getx/features/shop/screen/home/widget/primary_header_container.dart';
+import 'package:shopping_app_with_getx/common/widgets/custom_shapes/primary_header_container.dart';
 import 'package:shopping_app_with_getx/features/shop/screen/home/widget/promo_slider.dart';
 import 'package:shopping_app_with_getx/utils/constants/images.dart';
 import 'package:shopping_app_with_getx/utils/constants/sizes.dart';

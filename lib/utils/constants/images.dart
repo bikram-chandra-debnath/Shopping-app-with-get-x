@@ -1,6 +1,11 @@
 class AppImages {
   AppImages._();
 
+
+  // Profile
+
+  static const String userProfile = "assets/logo/profile.png";
+
   // On Boarding
 
   static const String onboarding1Animation = "assets/animations/welcome.json";

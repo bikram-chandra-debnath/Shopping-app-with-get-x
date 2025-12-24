@@ -72,6 +72,7 @@ class AppSizes{
 
   static const double homePrimaryHeaderHeight = 320.0;
   static const double storePrimaryHeaderHeight = 170.0;
+  static const double profilePrimaryHeaderHeight = 170.0;
 
   // brand card 
   static const double brandCardHeight = 70.0;

@@ -6,11 +6,12 @@ class AppSectionHeading extends StatelessWidget {
     super.key,
     required this.title,
     this.buttonTitle = AppTexts.viewAll,
-    this.onPressed,
+    this.onPressed,  this.actionButton=true,
   });
 
   final String title, buttonTitle;
   final VoidCallback? onPressed;
+  final bool actionButton;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,7 @@ class AppSectionHeading extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),
-        TextButton(
+      if( actionButton) TextButton(
           onPressed: () {},
           child: Text(
             buttonTitle,

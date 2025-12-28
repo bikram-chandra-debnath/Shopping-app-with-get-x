@@ -105,6 +105,23 @@ static const String store = "Store";
 static const String brands = "Brands";
 
 
+///-----------[Profile Screen]-------------
+
+
+
+// -----edit profile 
+static const String editProfile ="Edit profile";
+static const String accountSettigs ="Account Settings";
+static const String profileSettings ="Profile Settings";
+static const String name ="Name";
+static const String userName ="Username";
+static const String userID ="User ID";
+static const String gender="Gender";
+static const String closeAccount="Close Account";
+
+
+
+
 ///-------[Commonly Used]-----
 
 static const String viewAll= "View all";

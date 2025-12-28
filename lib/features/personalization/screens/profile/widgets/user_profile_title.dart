@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:shopping_app_with_getx/features/personalization/screens/edit_profile/edit_profile_screen.dart';
 
 
 class UserProfileTile extends StatelessWidget {
@@ -16,7 +18,7 @@ class UserProfileTile extends StatelessWidget {
         style: Theme.of(context).textTheme.headlineSmall,
       ),
       subtitle: Text("Biram nath83@gmail.com",style: Theme.of(context).textTheme.bodyMedium,),
-      trailing: IconButton(onPressed: () {}, icon: Icon(Iconsax.edit)),
+      trailing: IconButton(onPressed: ()=> Get.to(()=>EditProfileScreen()), icon: Icon(Iconsax.edit)),
     );
   }
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shopping_app_with_getx/common/widgets/text/section_heading.dart';
+import 'package:shopping_app_with_getx/features/authentication/screens/login/login_screen.dart';
 import 'package:shopping_app_with_getx/features/personalization/screens/profile/widgets/profile_primary_header.dart';
 import 'package:shopping_app_with_getx/features/personalization/screens/profile/widgets/settings_menu_tile.dart';
 import 'package:shopping_app_with_getx/features/personalization/screens/profile/widgets/user_profile_title.dart';
@@ -17,31 +19,51 @@ class ProfileScreen extends StatelessWidget {
           children: [
             // user profile
             AppProfilePrimaryHeader(),
-        
-           Padding(
-             padding: const EdgeInsets.all(AppSizes.defaultSpace),
-             child: Column(
-              children: [
-                 // User profile details
-              UserProfileTile(),
-              SizedBox(height:AppSizes.spaceBtwItems),
-              // account settings heading
-              AppSectionHeading(title: "Account Settings", actionButton: false),
-              // Settings menu
-              SettingsMenuTile(title: 'My Address', subtitle: 'Set shopping delivery address', icon: Iconsax.safe_home,),
-              SettingsMenuTile(title: 'My Cart', subtitle: 'Add, remove products and move to checkout', icon: Iconsax.shopping_cart,),
-              SettingsMenuTile(title: 'MY Order', subtitle: 'In-progress and completed Orders', icon: Iconsax.bag_tick,),
 
-              SizedBox(height:AppSizes.spaceBtwSections),
+            Padding(
+              padding: const EdgeInsets.all(AppSizes.defaultSpace),
+              child: Column(
+                children: [
+                  // User profile details
+                  UserProfileTile(),
+                  SizedBox(height: AppSizes.spaceBtwItems),
+                  // account settings heading
+                  AppSectionHeading(
+                    title: "Account Settings",
+                    actionButton: false,
+                  ),
+                  // Settings menu
+                  SettingsMenuTile(
+                    title: 'My Address',
+                    subtitle: 'Set shopping delivery address',
+                    icon: Iconsax.safe_home,
+                  ),
+                  SettingsMenuTile(
+                    title: 'My Cart',
+                    subtitle: 'Add, remove products and move to checkout',
+                    icon: Iconsax.shopping_cart,
+                  ),
+                  SettingsMenuTile(
+                    title: 'MY Order',
+                    subtitle: 'In-progress and completed Orders',
+                    icon: Iconsax.bag_tick,
+                  ),
 
-              // logout
+                  SizedBox(height: AppSizes.spaceBtwSections),
 
-              SizedBox(width: double.infinity,child: OutlinedButton(onPressed: (){}, child: Text("Logout")),),
-             
-              SizedBox(height:AppSizes.spaceBtwSections),
- ],
-             ),
-           )
+                  // logout
+                  SizedBox(
+                    width: double.infinity,
+                    child: OutlinedButton(
+                      onPressed: () => Get.offAll(() => LoginScreen()),
+                      child: Text("Logout"),
+                    ),
+                  ),
+
+                  SizedBox(height: AppSizes.spaceBtwSections),
+                ],
+              ),
+            ),
           ],
         ),
       ),

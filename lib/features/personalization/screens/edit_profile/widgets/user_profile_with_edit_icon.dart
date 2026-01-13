@@ -22,7 +22,7 @@ class UserProfileWithEditIcon extends StatelessWidget {
           bottom: 0,
           left: 0,
           right: 0,
-          child: Center(child: AppCirculrIcon(icon: Iconsax.edit)),
+          child: Center(child: AppCirculraIcon(icon: Iconsax.edit)),
         ),
       ],
     );

@@ -3,8 +3,8 @@ import 'package:shopping_app_with_getx/utils/constants/colors.dart';
 import 'package:shopping_app_with_getx/utils/constants/sizes.dart';
 import 'package:shopping_app_with_getx/utils/helpers/helper_function.dart';
 
-class AppCirculrIcon extends StatelessWidget {
-  const AppCirculrIcon({
+class AppCirculraIcon extends StatelessWidget {
+  const AppCirculraIcon({
     super.key,
     this.sidth,
     this.height,

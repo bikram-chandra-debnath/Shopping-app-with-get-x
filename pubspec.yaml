@@ -20,6 +20,7 @@ dependencies:
 
   # ---------[state management]
   get: ^4.7.2
+  readmore: ^3.0.0
   
 
 

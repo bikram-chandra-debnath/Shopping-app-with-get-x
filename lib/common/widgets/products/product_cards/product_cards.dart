@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shopping_app_with_getx/common/style/shadow.dart';
 import 'package:shopping_app_with_getx/common/widgets/custom_shapes/rounded_container.dart';
@@ -7,6 +8,7 @@ import 'package:shopping_app_with_getx/common/widgets/images/rounded_image.dart'
 import 'package:shopping_app_with_getx/common/widgets/text/brand_title_with_verify_icon.dart';
 import 'package:shopping_app_with_getx/common/widgets/text/product_price.dart';
 import 'package:shopping_app_with_getx/common/widgets/text/product_title_text.dart';
+import 'package:shopping_app_with_getx/features/shop/screen/product_details/product_details_screen.dart';
 import 'package:shopping_app_with_getx/utils/constants/colors.dart';
 import 'package:shopping_app_with_getx/utils/constants/images.dart';
 import 'package:shopping_app_with_getx/utils/constants/sizes.dart';
@@ -20,7 +22,7 @@ class AppProductCardVerticla extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = AppHelperFunction.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap:() => Get.to(()=> ProductDetailsScreen()),
       child: Container(
         height: 180,
         padding: EdgeInsets.all(1),
@@ -67,7 +69,7 @@ class AppProductCardVerticla extends StatelessWidget {
                   Positioned(
                     right: 0,
                     top: 0,
-                    child: AppCirculrIcon(
+                    child: AppCirculraIcon(
                       icon: Iconsax.heart,
                       // color: Colors.red,
                     ),

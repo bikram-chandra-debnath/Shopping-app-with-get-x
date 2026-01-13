@@ -20,7 +20,7 @@ class WishlistScreen extends StatelessWidget {
           style: Theme.of(context).textTheme.headlineMedium,
         ),
         actions: [
-          AppCirculrIcon(
+          AppCirculraIcon(
             icon: Iconsax.add,
             onPressed:
                 () => NavigationController.instance.selectedIndex.value = 0,

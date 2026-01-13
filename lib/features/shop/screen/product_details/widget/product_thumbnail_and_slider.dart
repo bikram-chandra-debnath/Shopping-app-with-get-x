@@ -38,7 +38,7 @@ class AppProductThumbnailAndSlider extends StatelessWidget {
           Positioned(
             left: AppSizes.defaultSpace,
             right: 0,
-            bottom: 0,
+            bottom: AppSizes.defaultSpace/2,
             child: SizedBox(
               height: 80,
               child: ListView.separated(

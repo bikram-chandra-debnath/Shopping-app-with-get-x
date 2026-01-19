@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shopping_app_with_getx/common/widgets/text/section_heading.dart';
 import 'package:shopping_app_with_getx/features/authentication/screens/login/login_screen.dart';
+import 'package:shopping_app_with_getx/features/personalization/screens/address/address_screen.dart';
 import 'package:shopping_app_with_getx/features/personalization/screens/profile/widgets/profile_primary_header.dart';
 import 'package:shopping_app_with_getx/features/personalization/screens/profile/widgets/settings_menu_tile.dart';
 import 'package:shopping_app_with_getx/features/personalization/screens/profile/widgets/user_profile_title.dart';
@@ -34,16 +35,19 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   // Settings menu
                   SettingsMenuTile(
+                    onTap: ()=> Get.to(()=> AddressScreen()),
                     title: 'My Address',
                     subtitle: 'Set shopping delivery address',
                     icon: Iconsax.safe_home,
                   ),
                   SettingsMenuTile(
+                    onTap: (){},
                     title: 'My Cart',
                     subtitle: 'Add, remove products and move to checkout',
                     icon: Iconsax.shopping_cart,
                   ),
                   SettingsMenuTile(
+                    onTap: (){},
                     title: 'MY Order',
                     subtitle: 'In-progress and completed Orders',
                     icon: Iconsax.bag_tick,

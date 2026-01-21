@@ -51,7 +51,7 @@ class AppSingleAddress extends StatelessWidget {
             ],
           ),
          if(isSelected)
-           Positioned(child: Icon(Iconsax.tick_circle),top: 0, bottom: 0, right: 6),
+           Positioned(top: 0, bottom: 0, right: 6, child: Icon(Iconsax.tick_circle)),
 
         ],
       ),

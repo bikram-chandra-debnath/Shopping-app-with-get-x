@@ -18,13 +18,12 @@ class AppImages {
 
   // accout create successful
 
-  static const String accountCreateSuccessful =
-      "assets/animations/accountCreated.json";
+  static const String accountCreateSuccessful ="assets/animations/accountCreated.json";
+      
 
   //password reset successful
 
-  static const String passwordResetSuccessful =
-      "assets/animations/successful.json";
+  static const String passwordResetSuccessful ="assets/animations/successful.json";
 
   // forget password
 
@@ -80,6 +79,22 @@ class AppImages {
   static const String nike = "assets/brands/nike.png";
   static const String northStar = "assets/brands/north_star.jpg";
   static const String polo = "assets/brands/polo.png";
+
+  // ---------[Payment methods]------
+  static const String applePay = "assets/icons/payment_methods/apple-pay.png";
+  static const String cod = "assets/icons/payment_methods/cod.png";
+  static const String creditCard = "assets/icons/payment_methods/credit-card.png";
+  static const String googlePay = "assets/icons/payment_methods/google-pay.png";
+  static const String masterCard = "assets/icons/payment_methods/master-card.png";
+  static const String paypal = "assets/icons/payment_methods/paypal.png";
+  static const String payStack = "assets/icons/payment_methods/paystack.png";
+  static const String paytm = "assets/icons/payment_methods/paytm.png";
+  static const String visa = "assets/icons/payment_methods/visa.png";
+
+  static const String successfulPayment = "assets/icons/payment_methods/successful_payment_icon.png";
+
+
+
 
   // -----[Products]-----
   // 1

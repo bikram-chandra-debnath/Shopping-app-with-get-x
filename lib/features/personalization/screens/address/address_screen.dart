@@ -1,10 +1,8 @@
 import "package:flutter/material.dart";
 import "package:get/get.dart";
-import "package:get/get_core/src/get_main.dart";
 import "package:iconsax/iconsax.dart";
 import "package:shopping_app_with_getx/common/style/padding.dart";
 import "package:shopping_app_with_getx/common/widgets/appbar/my_appbar.dart";
-import "package:shopping_app_with_getx/common/widgets/custom_shapes/rounded_container.dart";
 import "package:shopping_app_with_getx/features/personalization/screens/address/widgets/single_address.dart";
 import "package:shopping_app_with_getx/utils/constants/sizes.dart";
 

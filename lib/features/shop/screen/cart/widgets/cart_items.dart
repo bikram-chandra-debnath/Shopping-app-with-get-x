@@ -6,6 +6,7 @@ import '../../../../../common/widgets/text/product_price.dart';
 import '../../../../../utils/constants/sizes.dart';
 
 
+// ignore: must_be_immutable
 class AppCartItems extends StatelessWidget {
    AppCartItems({
     super.key,
@@ -16,10 +17,11 @@ class AppCartItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
+      shrinkWrap: true,
       separatorBuilder:
           (BuildContext context, int index) =>
           SizedBox(height: AppSizes.spaceBtwSections),
-      itemCount: 13,
+      itemCount: 3,
       itemBuilder: (context, index) {
         return Column(
           children: [

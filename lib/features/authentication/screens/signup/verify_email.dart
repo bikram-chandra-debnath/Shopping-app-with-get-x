@@ -62,7 +62,7 @@ class VerifyEmailScreen extends StatelessWidget {
               //done
 
               AppElevatedButton(onPressed: ()=> Get.to(()=> SuccessScreen(
-                image: AppImages.accountCreateSuccessful,
+                image: AppImages.successfulPayment,
                 title: AppTexts.accountCreatedSuccessTitle,
                 subTitle: AppTexts.accountCreatedSuccessSubtitle,
                 onTap: () => Get.offAll(()=> LoginScreen()),

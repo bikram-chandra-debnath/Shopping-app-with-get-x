@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:shopping_app_with_getx/common/style/padding.dart';
 import 'package:shopping_app_with_getx/common/widgets/buttons/app_elevated_button.dart';
+import 'package:shopping_app_with_getx/common/widgets/screen/success_screen.dart';
 import 'package:shopping_app_with_getx/utils/constants/images.dart';
 import 'package:shopping_app_with_getx/utils/constants/sizes.dart';
 import 'package:shopping_app_with_getx/utils/constants/texts.dart';
@@ -60,7 +61,7 @@ class VerifyEmailScreen extends StatelessWidget {
 
               //done
 
-              AppElevatedButton(onPressed: (){}, child: Text(AppTexts.appContinue)),
+              AppElevatedButton(onPressed: ()=> Get.to(()=> SuccessScreen()), child: Text(AppTexts.appContinue)),
               // resend email
               SizedBox(
                 width: double.infinity,

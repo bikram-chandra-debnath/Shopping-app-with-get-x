@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:shopping_app_with_getx/features/authentication/screens/login/login_screen.dart';
+import 'package:shopping_app_with_getx/features/authentication/screens/signup/verify_email.dart';
 import 'package:shopping_app_with_getx/features/authentication/screens/signup/widgets/privacy_policy_and_checkbox.dart';
 
 import '../../../../../common/widgets/buttons/app_elevated_button.dart';
@@ -80,7 +80,7 @@ class SignUPForm extends StatelessWidget {
 
         // Create Account Button
 
-        AppElevatedButton(onPressed: ()=> Get.offAll(LoginScreen()), child: Text(AppTexts.createAccount)),
+        AppElevatedButton(onPressed: ()=> Get.to(VerifyEmailScreen()), child: Text(AppTexts.createAccount)),
       ],
     );
   }

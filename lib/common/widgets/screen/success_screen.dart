@@ -47,7 +47,7 @@ class SuccessScreen extends StatelessWidget {
 
               // Continue
               AppElevatedButton(
-                onPressed: () {},
+                onPressed: onTap,
                 child: Text(AppTexts.appContinue),
               ),
             ],

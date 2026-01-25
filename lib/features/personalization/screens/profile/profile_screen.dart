@@ -9,6 +9,8 @@ import 'package:shopping_app_with_getx/features/personalization/screens/profile/
 import 'package:shopping_app_with_getx/features/personalization/screens/profile/widgets/user_profile_title.dart';
 import 'package:shopping_app_with_getx/utils/constants/sizes.dart';
 
+import '../../../shop/screen/order/order_screen.dart';
+
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
@@ -47,7 +49,7 @@ class ProfileScreen extends StatelessWidget {
                     icon: Iconsax.shopping_cart,
                   ),
                   SettingsMenuTile(
-                    onTap: (){},
+                    onTap: ()=> Get.to(()=> OrderScreen()),
                     title: 'MY Order',
                     subtitle: 'In-progress and completed Orders',
                     icon: Iconsax.bag_tick,

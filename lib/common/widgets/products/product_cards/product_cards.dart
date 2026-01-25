@@ -102,26 +102,29 @@ class AppProductCardVerticla extends StatelessWidget {
             Spacer(),
 
                   // product price
-            Padding(
-              padding: const EdgeInsets.only(left:AppSizes.sm),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  AppProductPrice(price: '79'),
-                  Container(
-                    height: AppSizes.iconlg * 1.2,
-                    width: AppSizes.iconlg * 1.2,
-                    decoration: BoxDecoration(
-                      color: AppColors.primary,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(AppSizes.cardRadiusMd),
-                        bottomRight: Radius.circular(AppSizes.productImageRadius),
-                      ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: AppSizes.sm),
+                  child: AppProductPrice(price: '79'),
+                ),
+
+                // add to cart button
+
+                Container(
+                  height: AppSizes.iconlg * 1.2,
+                  width: AppSizes.iconlg * 1.2,
+                  decoration: BoxDecoration(
+                    color: AppColors.primary,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(AppSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(AppSizes.productImageRadius),
                     ),
-                    child: Icon(Iconsax.add, color: AppColors.white),
                   ),
-                ],
-              ),
+                  child: Icon(Iconsax.add, color: AppColors.white),
+                ),
+              ],
             ),
           ],
         ),

@@ -21,6 +21,10 @@ dependencies:
   # ---------[state management]
   get: ^4.7.2
   readmore: ^3.0.0
+  firebase_core: ^4.4.0
+  firebase_auth: ^6.1.4
+  cloud_firestore: ^6.1.2
+  google_sign_in: ^7.2.0
   
 
 

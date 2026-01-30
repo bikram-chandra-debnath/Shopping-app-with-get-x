@@ -5,6 +5,7 @@ import 'package:shopping_app_with_getx/common/widgets/products/product_cards/pro
 import 'package:shopping_app_with_getx/common/widgets/text/section_heading.dart';
 import 'package:shopping_app_with_getx/common/widgets/textfields/search_bar.dart';
 import 'package:shopping_app_with_getx/features/shop/controller/home/home_controller.dart';
+import 'package:shopping_app_with_getx/features/shop/screen/all_products/all_products_screen.dart';
 import 'package:shopping_app_with_getx/features/shop/screen/home/widget/home_appbar.dart';
 import 'package:shopping_app_with_getx/features/shop/screen/home/widget/home_categories.dart';
 import 'package:shopping_app_with_getx/common/widgets/custom_shapes/primary_header_container.dart';
@@ -69,10 +70,10 @@ class HomeScreen extends StatelessWidget {
                   ),
                   SizedBox(height: AppSizes.spaceBtwSections),
 
-                  // product heading
+                  // Section heading
                   AppSectionHeading(
                     title: AppTexts.popularProducts,
-                    onPressed: () {},
+                    onPressed: () => Get.to(()=> AllProductsScreen()),
                   ),
 
                   SizedBox(height: AppSizes.spaceBtwItems),

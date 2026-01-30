@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app_with_getx/common/style/padding.dart';
 import 'package:shopping_app_with_getx/common/widgets/appbar/my_appbar.dart';
-import 'package:shopping_app_with_getx/features/shop/screen/all_products/widgets/sortable_product.dart';
+import 'package:shopping_app_with_getx/common/widgets/products/sortable_product.dart';
 
 class AllProductsScreen extends StatelessWidget {
   const AllProductsScreen({super.key});

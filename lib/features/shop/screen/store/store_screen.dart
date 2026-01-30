@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:shopping_app_with_getx/common/widgets/appbar/tab_bar.dart';
 import 'package:shopping_app_with_getx/common/widgets/brands/brand_card.dart';
 import 'package:shopping_app_with_getx/common/widgets/text/section_heading.dart';
+import 'package:shopping_app_with_getx/features/shop/screen/brands/all_brands_screen.dart';
 import 'package:shopping_app_with_getx/features/shop/screen/store/widgets/categori_tab.dart';
 import 'package:shopping_app_with_getx/features/shop/screen/store/widgets/store_primary_header.dart';
 import 'package:shopping_app_with_getx/utils/constants/sizes.dart';
@@ -36,9 +38,10 @@ class StoreScreen extends StatelessWidget {
                         ),
                         child: Column(
                           children: [
+                            // section Heading
                             AppSectionHeading(
                               title: AppTexts.brands,
-                              onPressed: () {},
+                              onPressed: ()=> Get.to(()=> AllBrandsScreen()),
                             ),
                             // brand card
                             SizedBox(

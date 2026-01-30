@@ -25,7 +25,7 @@ class AppSectionHeading extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
         ),
       if( actionButton) TextButton(
-          onPressed: () {},
+          onPressed: onPressed,
           child: Text(
             buttonTitle,
             style: Theme.of(context).textTheme.bodySmall,

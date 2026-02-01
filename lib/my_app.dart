@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shopping_app_with_getx/features/authentication/screens/onboarding/onboarding_screen.dart';
+import 'package:shopping_app_with_getx/utils/constants/colors.dart';
 import 'package:shopping_app_with_getx/utils/them/them.dart';
 
 class MyApp extends StatelessWidget {
@@ -16,7 +16,14 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
 
       darkTheme: AppTheme.darkTheme,
-      home: OnboardingScreen(),
+      home: Scaffold(
+        backgroundColor: AppColors.primary,
+        body: Center(
+          child: CircularProgressIndicator(color: AppColors.white),
+        ),
+      )
+      
+      
 
     );
   }
